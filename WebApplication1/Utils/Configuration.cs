@@ -12,6 +12,7 @@ namespace api.Utils
         public static string TokenAudienceId => ConfigurationManager.AppSettings["Token:AudienceId"];
         public static string TokenAudienceSecret => ConfigurationManager.AppSettings["Token:AudienceSecret"];
 
-        public static int TokenExpireTimeMinutes => Convert.ToInt32(ConfigurationManager.AppSettings["Token:TokenExpireTimeMinutes"]);        
+        public static int TokenExpireTimeMinutes => Convert.ToInt32(ConfigurationManager.AppSettings["Token:TokenExpireTimeMinutes"]);
+        public static int RefreshTokenExpireTimeMinutes => Convert.ToInt32(ConfigurationManager.AppSettings["Token:RefreshTokenExpireTimeMinutes"]);
     }
 }

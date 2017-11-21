@@ -238,12 +238,18 @@
     <Compile Include="Migrations\201711202113181_initial.Designer.cs">
       <DependentUpon>201711202113181_initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201711212052462_RefreshTokens.cs" />
+    <Compile Include="Migrations\201711212052462_RefreshTokens.Designer.cs">
+      <DependentUpon>201711212052462_RefreshTokens.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\MyDbContext.cs" />
+    <Compile Include="Models\RefreshToken.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
     <Compile Include="Providers\JWTFormat.cs" />
+    <Compile Include="Providers\RefreshTokenProvider.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="Utils\ApplicationUserManager.cs" />
     <Compile Include="Utils\Configuration.cs" />
@@ -319,6 +325,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201711202113181_initial.resx">
       <DependentUpon>201711202113181_initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711212052462_RefreshTokens.resx">
+      <DependentUpon>201711212052462_RefreshTokens.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

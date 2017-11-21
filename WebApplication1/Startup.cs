@@ -56,6 +56,7 @@ namespace api
                 // In production mode set AllowInsecureHttp = false
                 AllowInsecureHttp = true,
                 AccessTokenFormat = new JWTFormat(api.Utils.Configuration.TokenIssuer),
+                RefreshTokenProvider = new RefreshTokenProvider()
             };
             app.UseOAuthAuthorizationServer(OAuthOptions);
             app.UseOAuthBearerAuthentication(new OAuthBearerAuthenticationOptions());
